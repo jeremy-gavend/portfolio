@@ -2,6 +2,29 @@ main {
   display: flex;
 }
 
+header {
+  display: flex;
+}
+
 section {
+  display: flex;
+}
+
+main section:nth-child(1) {
+}
+
+main section:nth-child(2) {
+}
+
+main section:nth-child(3) {
+}
+
+main section:nth-child(4) {
+}
+
+main section:nth-child(5) {
+}
+
+footer {
   display: flex;
 }
