@@ -30,12 +30,19 @@ main section:nth-child(1) {
   flex-direction: row;
 }
 
-main section:nth-child(1) div {
+#intro div {
   display: flex;
   flex-direction: column;
 }
 
 main section:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+#cv div {
+  display: flex;
+  flex-direction: column;
 }
 
 main section:nth-child(3) {
