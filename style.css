@@ -20,6 +20,10 @@ header {
   align-items: center;
 }
 
+header > * {
+  width: 40%;
+}
+
 header img {
   height: 25px;
 }
@@ -38,6 +42,15 @@ nav ul {
 
 nav li {
   list-style-type: none;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav li a:visited {
+  color: black;
 }
 
 main {
@@ -161,13 +174,42 @@ main > section:nth-child(5) {
 
 footer {
   display: flex;
+  flex-direction: row;
+}
+
+footer > * {
+  width: 40%;
+}
+
+footer img {
+  height: 25px;
 }
 
 footer ul {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
 }
 
 footer li {
   list-style-type: none;
 }
+
+footer li a {
+  color: black;
+  text-decoration: none;
+}
+
+footer li a:visited {
+  color: black;
+}
+
+/*  
+(footer container) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+*/
