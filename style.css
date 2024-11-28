@@ -20,8 +20,12 @@ header {
   align-items: center;
 }
 
-header > * {
-  width: 40%;
+header > div {
+  width: 10%;
+}
+
+header > nav {
+  width: 70%;
 }
 
 header img {
@@ -36,12 +40,14 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 80vw;
 }
 
 nav li {
   list-style-type: none;
+  margin: 0 2%;
 }
 
 nav li a {
@@ -197,10 +203,6 @@ main > section:nth-child(4) {
   padding-bottom: 2%;
 }
 
-/* #works h2 {
-  
-} */
-
 #works > div:last-child {
   display: flex;
   flex-direction: row;
@@ -208,12 +210,22 @@ main > section:nth-child(4) {
 }
 
 #works article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 40%;
+
   background-color: white;
 
   border-radius: 15px;
 
   padding: 1%;
   margin: 1% 0;
+}
+
+#works article div {
+  width: 100%;
 }
 
 #works > div:last-child img {
@@ -267,12 +279,14 @@ footer img {
 footer ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 80vw;
 }
 
 footer li {
   list-style-type: none;
+  margin: 0 2%;
 }
 
 footer li a {
@@ -292,6 +306,12 @@ footer li a:visited {
   align-items: center;
 }
 */
+
+@media only screen and (max-width: 1700px) {
+  #works > div:last-child img {
+    height: 300px;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   h1 {
@@ -322,5 +342,28 @@ footer li a:visited {
 
   #services article > div p {
     font-size: 15px;
+  }
+
+  #services article > div:last-child {
+    flex-wrap: wrap;
+  }
+
+  #services article > div img {
+    height: 150px;
+    width: 250px;
+
+    margin-bottom: 2%;
+  }
+
+  #works > div:last-child {
+    flex-direction: column;
+  }
+
+  #works > div:last-child article {
+    width: 98%;
+  }
+
+  #works > div:last-child img {
+    height: 250px;
   }
 }
