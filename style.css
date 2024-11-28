@@ -230,6 +230,7 @@ main > section:nth-child(4) {
 
 #works > div:last-child img {
   height: 500px;
+  min-width: 500px;
 
   border: 2px solid gray;
   border-radius: 10px;
@@ -310,6 +311,7 @@ footer li a:visited {
 @media only screen and (max-width: 1700px) {
   #works > div:last-child img {
     height: 300px;
+    min-width: auto;
   }
 }
 
@@ -365,5 +367,6 @@ footer li a:visited {
 
   #works > div:last-child img {
     height: 250px;
+    min-width: auto;
   }
 }
