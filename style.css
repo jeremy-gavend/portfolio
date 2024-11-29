@@ -309,10 +309,24 @@ main > section:nth-child(5) {
   background-attachment: fixed;
 }
 
-#contact > div {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+#contact a {
+  color: black;
+  text-decoration: none;
+
+  font-family: "HalenoirCompact-Bold";
+  font-size: 100%;
+
+  padding: 0.5% 2%;
+
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: lightgray;
+  box-shadow: 0 0 5px 1px black;
+}
+
+#contact a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 footer {
