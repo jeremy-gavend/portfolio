@@ -26,6 +26,7 @@ header {
   justify-content: space-around;
   align-items: center;
 
+  /*makes background lighter*/
   background: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
@@ -97,8 +98,10 @@ p {
   font-size: 20px;
 }
 
+/* to make appear (with animation) some element on page start*/
 img,
-h1 {
+h1,
+h2 {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
@@ -124,6 +127,7 @@ main > section:nth-child(1) {
   align-items: center;
   min-height: 50vh;
 
+  /* prolongate the background from header*/
   background: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
@@ -194,7 +198,7 @@ main > section:nth-child(3) {
   flex-direction: column;
 
   min-height: 70vh;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 
   background-color: white;
 }
@@ -244,7 +248,7 @@ main > section:nth-child(4) {
   min-height: 60vh;
   background-color: rgb(224, 224, 215);
 
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 #works > div:last-child {
@@ -301,6 +305,7 @@ main > section:nth-child(5) {
 
   min-height: 30vh;
 
+  /* ending with the background*/
   background: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
@@ -316,17 +321,42 @@ main > section:nth-child(5) {
   font-family: "HalenoirCompact-Bold";
   font-size: 100%;
 
-  padding: 0.5% 2%;
+  padding: 0.5% 1%;
 
-  border: 1px solid gray;
   border-radius: 10px;
-  background-color: lightgray;
-  box-shadow: 0 0 5px 1px black;
 }
 
 #contact a:hover {
   color: black;
   text-decoration: none;
+}
+
+#contact img {
+  height: 70px;
+}
+
+/*for the mail animation*/
+#contact a img:last-child {
+  display: none;
+
+  /* to cancel basic animation*/
+
+  /*animation: none;
+  opacity: 1;*/
+}
+
+#contact a img:first-child {
+  display: block;
+  /*animation: none;
+  opacity: 1;*/
+}
+
+#contact a:hover img:last-child {
+  display: block;
+}
+
+#contact a:hover img:first-child {
+  display: none;
 }
 
 footer {
